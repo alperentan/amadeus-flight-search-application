@@ -1,4 +1,4 @@
-# Flight search app for amadeus case study
+# Flight search app for Amadeus case study
 
 ## Available Scripts
 
