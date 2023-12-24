@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### to run mock API, go to mockAPI folder using `cd mockAPI`
 ### then while in mockAPI folder, `json-server --watch mock.json --port 3001` to run API in http://localhost:3001
-### then open a separate terminal, `npm start` to run the app
+### finally open a separate terminal, `npm start` to run the app
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
