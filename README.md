@@ -4,7 +4,7 @@
 
 In the project directory, you can run:
 
-### `npm install` to install required packages while inside directory using terminal, then
+### `npm install` to install required packages using terminal, then
 
 ### to run mock API, go to mockAPI folder using `cd mockAPI`
 ### then `json-server --watch mock.json --port 3001` to run API in http://localhost:3000
