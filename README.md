@@ -10,5 +10,5 @@ In the project directory, you can run:
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-To see flight data, use Adana Havalimanı as the departure airport, Sabiha Gökçen Havalimanı as the arrival airport and 20/01/2024 as both the departure date and arrival date.
-Similar JSON data is available in the mock.json file inside the mockAPI folder. You can add or edit any data as long as its structure is the same.
+#### To see flight data, use Adana Havalimanı as the departure airport, Sabiha Gökçen Havalimanı as the arrival airport and 20/01/2024 as both the departure date and arrival date.
+#### Similar JSON data is available in the mock.json file inside the mockAPI folder. You can add or edit any data as long as its structure is the same.
