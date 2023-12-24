@@ -1,7 +1,5 @@
 # Flight search app for Amadeus case study
 
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm install` to install required packages using terminal
