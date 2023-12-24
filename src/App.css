@@ -1,31 +1,40 @@
-.App {
-  text-align: center;
+body{
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  background-color: #e0e0e0;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header a {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #bbbaba;
+  color: black;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +43,141 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 4px;
+  border-radius: 50%;
+  border: 3px solid black;
+  border-color: black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.airportSelect{
+  width: 20%;
+  margin-right: 10px;
+}
+.dateSelect{
+  margin-right: 10px;
+  font-weight: 600;
+}
+.selectDateInputSection {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+.dateInput{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.oneWayFlightCheckSection{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.oneWayFlightCheck{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.searchButtonSection{
+  display: flex;
+  justify-content: center;
+}
+.button{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #788078;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.button:hover{
+  background-color: #696b69;
+}
+.search{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flightListSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flightInfo{
+  background-color: rgb(230, 223, 223);
+  padding: 10px;
+  border-radius: 10px;
+  list-style: none;
+  margin: 10px 0;
+}
+.checkInput{
+  width: 14px;
+  height: 14px;
+}
+.text-center{
+  text-align: center;
+}
+.infoRow{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.flex-display{
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .airportSelect{
+    width: 30%;
+  }
+  .infoRow{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .selectDateInputSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .airportSelect{
+    width: 80%;
+  }
+  .infoRow{
+    font-size: 10px;
+  }
+  .infoRow p{
+    margin-right: 10px;
+  }
+  .button-section{
+    display: block;
   }
 }
